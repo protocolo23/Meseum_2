@@ -1,0 +1,149 @@
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Discover current exhibitions of Ukrainian art at the museum."
+    />
+    <title>Current Exhibitions | Museum</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/styles/main.scss"
+    />
+  </head>
+  <body class="page__body exhibitions-page">
+    <header class="exhibitions-page__header">
+      <div class="container exhibitions-page__header-content">
+        <a
+          href="./index.html"
+          class="top-bar__logo"
+          aria-label="Museum home"
+        >
+          <img
+            src="./src/images/logo.png"
+            alt="Museum logo"
+            class="top-bar__logo--img"
+          />
+        </a>
+        <a
+          class="exhibitions-page__back"
+          href="./index.html#exhibition"
+        >
+          Back to museum
+        </a>
+      </div>
+    </header>
+
+    <main class="exhibitions-page__main">
+      <div class="container">
+        <section
+          class="exhibitions-page__intro"
+          aria-labelledby="exhibitions-title"
+        >
+          <p class="exhibitions-page__eyebrow">Explore the collection</p>
+          <h1
+            class="title exhibitions-page__title"
+            id="exhibitions-title"
+          >
+            Current exhibitions
+          </h1>
+          <p class="exhibitions-page__description">
+            Meet the artists and stories shaping Ukrainian art. Explore what's
+            on view and plan your visit.
+          </p>
+        </section>
+
+        <section
+          class="exhibitions-page__list"
+          aria-label="Exhibitions"
+        >
+          <article class="exhibitions-page__card">
+            <picture>
+              <source
+                media="(min-width: 769px)"
+                srcset="./src/images/exhibition/exhibition-img_1.png"
+              />
+              <img
+                class="exhibitions-page__image"
+                src="./src/images/exhibition/exhibition-img_1-mob.png"
+                alt="Artwork featured in the Angels exhibition"
+              />
+            </picture>
+            <div class="exhibitions-page__card-content">
+              <p class="exhibitions-page__date">11 July – 22 September</p>
+              <h2 class="title exhibitions-page__name">
+                Curated exhibition “Angels”
+              </h2>
+              <p class="exhibitions-page__details">
+                Discover a landmark exhibition exploring the image of angels in
+                Ukrainian art, with stories from the artists and their time.
+              </p>
+              <a
+                href="./buy-ticket.html"
+                class="action-button exhibitions-page__ticket"
+              >
+                Plan your visit
+              </a>
+            </div>
+          </article>
+
+          <article class="exhibitions-page__card">
+            <picture>
+              <source
+                media="(min-width: 769px)"
+                srcset="./src/images/exhibition/exhibition-img_2.png"
+              />
+              <img
+                class="exhibitions-page__image"
+                src="./src/images/exhibition/exhibition-img_2-mob.png"
+                alt="Artwork from the museum's permanent collection"
+              />
+            </picture>
+            <div class="exhibitions-page__card-content">
+              <p class="exhibitions-page__date">On permanent display</p>
+              <h2 class="title exhibitions-page__name">
+                Art of the 20th and 21st centuries
+              </h2>
+              <p class="exhibitions-page__details">
+                See works by Alla Horska, Mykola Samokysh, Fedir Krychevsky, and
+                other important Ukrainian artists.
+              </p>
+              <a
+                href="./buy-ticket.html"
+                class="action-button exhibitions-page__ticket"
+              >
+                Plan your visit
+              </a>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="./src/scripts/main.js"
+    ></script>
+  </body>
+</html>

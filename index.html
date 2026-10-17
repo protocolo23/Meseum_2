@@ -1,0 +1,514 @@
+<!doctype html>
+<html
+  lang="en"
+  class="page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Explore Ukrainian art, current exhibitions, museum events, and visitor information."
+    />
+    <title>Museum — Ukrainian Art &amp; Exhibitions</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./src/styles/main.scss"
+    />
+    <link
+      rel="icon"
+      href="./src/images/icons8-museum-16.png"
+    />
+  </head>
+  <body
+    id="home"
+    class="page__body"
+  >
+    <!-- #region HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="top-bar header__top">
+            <a
+              href="#home"
+              class="top-bar__logo"
+            >
+              <img
+                src="./src/images/logo.png"
+                alt="Museum logo"
+                class="top-bar__logo--img"
+              />
+            </a>
+            <div class="top-bar__icons">
+              <a
+                href="#menu"
+                class="icon icon--burger_menu"
+                aria-label="Open navigation menu"
+              ></a>
+              <p class="top-bar__lang header__top-bar__lang">UA</p>
+            </div>
+          </div>
+          <div class="header__info">
+            <p class="header__events_data">August 10 - November 10</p>
+            <h1 class="title header__title">Art of the 19th-20th centuries</h1>
+            <p class="header__contribution">
+              Contribution of Ukrainian artists to world culture in the 19th-20th centuries.
+            </p>
+          </div>
+          <button class="action-button header__button" data-ticket-page="true">Buy ticket</button>
+          <div class="header__img"></div>
+          <div class="header__data__line">
+            <p class="header__data">10.08 - 10.10</p>
+            <div class="header__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- #endregion -->
+
+    <!-- #region MENU -->
+    <aside
+      id="menu"
+      class="menu page__menu"
+    >
+      <div class="container">
+        <div class="top-bar">
+          <a
+            href="#"
+            class="top-bar__logo"
+          >
+            <img
+              src="./src/images/logo.png"
+              alt="Museum logo"
+              class="top-bar__logo--img"
+            />
+          </a>
+          <div class="top-bar__icons menu__top-bar__icons">
+            <a
+              href="#"
+              class="icon icon--close"
+              aria-label="Close navigation menu"
+            ></a>
+            <p class="top-bar__lang">UA</p>
+            <p class="top-bar__lang">FR</p>
+            <p class="top-bar__lang">EN</p>
+            <p class="top-bar__lang">DEU</p>
+          </div>
+        </div>
+        <div class="menu__content">
+          <div class="menu__today__schedule">
+            <p>Today's schedule:</p>
+            <p>12:00 - 19:00</p>
+          </div>
+          <div class="menu__address">
+            <p>Address:</p>
+            <a href="#">Kyiv, 6 M. Hrushevsky St.</a>
+          </div>
+          <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a
+                  href="#exhibition"
+                  class="nav__link"
+                >
+                  Current exhibitions
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#events"
+                  class="nav__link"
+                >
+                  Upcoming events
+                </a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#news"
+                  class="nav__link"
+                >
+                  News
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="action-button menu__action-button" data-ticket-page="true">
+            Buy ticket
+          </button>
+          <div class="menu__picture"></div>
+        </div>
+      </div>
+    </aside>
+    <!-- #endregion -->
+
+    <!-- #region MAIN -->
+    <main class="main">
+      <section
+        id="exhibition"
+        class="exhibition"
+      >
+        <div class="container">
+          <div class="exhibition__content">
+            <h2 class="title exhibition__title">Current exhibitions</h2>
+            <div class="exhibition__item exhibition__item--1">
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./src/images/exhibition/exhibition-img_1.png"
+                />
+
+                <img
+                  src="./src/images/exhibition/exhibition-img_1-mob.png"
+                  alt="Artwork from the Angels exhibition"
+                  class="exhibition__img"
+                />
+              </picture>
+              <div class="exhibition__info">
+                <p class="exhibition__date">11.07 - 22.09</p>
+                <h3 class="title exhibition__name">
+                  Curated exhibition "Angels"
+                </h3>
+                <p class="exhibition__descr">
+                  The exhibition project "Angels" is a landmark event for Ukrainian culture and at the same time one of the largest...
+                </p>
+              </div>
+              <button class="action-button exhibition__action-button" data-ticket-page="true">
+                Buy ticket
+              </button>
+            </div>
+            <div class="exhibition__item exhibition__item--2">
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./src/images/exhibition/exhibition-img_2.png"
+                />
+
+                <img
+                  src="./src/images/exhibition/exhibition-img_2-mob.png"
+                  alt="Artwork from the museum's permanent collection"
+                  class="exhibition__img"
+                />
+              </picture>
+              <div class="exhibition__info">
+                <p class="exhibition__date">On permanent display</p>
+                <h3 class="title exhibition__name">
+                  Art of the 20th century — 21st century
+                </h3>
+                <p class="exhibition__descr">
+                  Iconic works by Alla Horska, Mykola Samokysh, Fedir Krychevsky, and other artists.
+                </p>
+              </div>
+              <button class="action-button exhibition__action-button" data-ticket-page="true">
+                Buy ticket
+              </button>
+            </div>
+            <button class="root-button exhibition__root-button">
+              <p>Exhibition archive</p>
+              <div class="root-button__arrow"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="events"
+        class="events"
+      >
+        <div class="container">
+          <div class="events__content">
+            <h2 class="title events__title">Upcoming events</h2>
+            <div class="events__event events__event--1">
+              <img
+                src="./src/images/events/events--img-1.png"
+                alt="Curatorial tour event at the museum"
+                class="events__img"
+              />
+              <div class="events__info">
+                <p class="events__date">August 14 at 1:00 PM</p>
+                <h3 class="title events__name">
+                  Curatorial tours by Pavlo Hudimov
+                </h3>
+                <p class="events__description">
+                  Secrets of preparation, stories behind artifacts, the magic of the performance before and during your presence will unfold...
+                </p>
+                <button class="action-button events__action-button">
+                  Register
+                </button>
+              </div>
+            </div>
+            <div class="events__event events__event--2">
+              <img
+                src="./src/images/events/events--img-2.png"
+                alt="Art workshop event at the museum"
+                class="events__img"
+              />
+              <div class="events__info">
+                <p class="events__date">August 16 at 1:00 PM</p>
+                <h3 class="title events__name">
+                  Workshop "Journey to Australia"
+                </h3>
+                <p class="events__description">
+                  This Sunday at 2:00 PM, art travelers are invited to the last stop of the round-the-world journey — Australia.
+                </p>
+                <button class="action-button events__action-button">
+                  Register
+                </button>
+              </div>
+            </div>
+            <button class="root-button events__root-button">
+              <p>Event calendar</p>
+              <div class="root-button__arrow"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="visit"
+        class="visit-museum"
+      >
+        <div class="visit-museum__content">
+          <div class="visit-museum__info">
+            <h2 class="title visit-museum__title">
+              Plan your
+              <br />
+              visit to the museum
+            </h2>
+            <p class="visit-museum__descr">
+              Choose a convenient day, register for events that interest you,
+              buy your ticket in advance so nothing prevents you from enjoying
+              the art.
+            </p>
+            <button
+              class="action-button visit-museum__action-button"
+              data-exhibitions-page="true"
+            >
+              Start
+            </button>
+          </div>
+          <div class="visit-museum__img"></div>
+        </div>
+      </section>
+      <section
+        id="news"
+        class="news"
+      >
+        <div class="container">
+          <div class="news__content">
+            <h2 class="title news__title">News</h2>
+            <div class="news__item news__item--1">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./src/images/news/news-img_1.png"
+                />
+
+                <img
+                  src="./src/images/news/news-img_1--mob.png"
+                  alt="Museum giveaway announcement"
+                  class="news__img"
+                />
+              </picture>
+              <div class="news__info">
+                <p class="news__date">August 9, 2019</p>
+                <h3 class="title news__name">Winner announcement</h3>
+                <p class="news__descr">
+                  Friends, it's Friday today! That means it's time to announce the winner of the giveaway...
+                </p>
+              </div>
+            </div>
+            <div class="news__item news__item--2">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="./src/images/news/news-img_2.png"
+                />
+
+                <img
+                  src="./src/images/news/news-img_2--mob.png"
+                  alt="International Cat Day at the museum"
+                  class="news__img"
+                />
+              </picture>
+              <div class="news__info">
+                <p class="news__date">August 9, 2019</p>
+                <h3 class="title news__name">International Cat Day</h3>
+                <p class="news__descr">
+                  A museum with lions cannot simply ignore International Cat Day!
+                </p>
+              </div>
+            </div>
+            <button class="root-button news__root-button">
+              <p>All news</p>
+              <div class="root-button__arrow"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        id="subscribe"
+        class="subscribe"
+      >
+        <div class="container">
+          <div class="subscribe__content">
+            <h2 class="title subscribe__title">Subscribe to the digest</h2>
+            <div class="subscribe__descr">
+              Be the first to learn about museum news and giveaways, receive
+              invitations to events, and read articles by curators.
+            </div>
+            <form
+              action="#"
+              id="form__subscribe"
+              class="subscribe__form"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="e-mail"
+                class="subscribe__input"
+                aria-label="Email address"
+                required
+              />
+            </form>
+            <button
+              form="form__subscribe"
+              type="submit"
+              class="action-button subscribe__action-button"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- #endregion -->
+
+    <!-- #region FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__contacts">
+            <h2 class="title footer__title">Contacts</h2>
+            <a
+              href="https://maps.app.goo.gl/tCQsriEXscnAt6co6"
+              class="footer__adress"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Kyiv,
+              <br />
+              6 M. Hrushevsky St.
+            </a>
+            <a
+              href="tel:278-13-57"
+              class="footer__phone"
+            >
+              tel. 278-13-57, 278-74-54
+            </a>
+            <a
+              href="mailto:info@namu.kiev.ua"
+              class="footer__email"
+            >
+              info@namu.kiev.ua
+            </a>
+            <div class="footer__socials">
+              <a
+                href="https://www.facebook.com/"
+                class="icon icon--facebook"
+                target="_blank"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://x.com/"
+                class="icon icon--twitter"
+                target="_blank"
+                aria-label="X"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://web.telegram.org/"
+                class="icon icon--telegram"
+                target="_blank"
+                aria-label="Telegram"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                class="icon icon--instagram"
+                target="_blank"
+                aria-label="Instagram"
+                rel="noopener noreferrer"
+              ></a>
+            </div>
+          </div>
+          <div class="footer__shedule">
+            <h2 class="title footer__title">Opening hours</h2>
+            <ul class="footer__list">
+              <li class="footer__list__item">Mon: closed</li>
+              <li class="footer__list__item">Tue: closed</li>
+              <li class="footer__list__item">Wed: 10:00 - 17:00</li>
+              <li class="footer__list__item">Thu: 10:00 - 17:00</li>
+              <li class="footer__list__item">Fri: 12:00 - 19:00</li>
+              <li class="footer__list__item">Sat: 11:00 - 18:00</li>
+              <li class="footer__list__item">Sun: 10:00 - 17:00</li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <h2 class="title footer__title footer__title--main">Main</h2>
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a
+                  href="#exhibition"
+                  class="footer__list__link"
+                >
+                  Exhibitions
+                </a>
+              </li>
+              <li class="footer__list__item">
+                <a
+                  href="#events"
+                  class="footer__list__link"
+                >
+                  Events
+                </a>
+              </li>
+              <li class="footer__list__item">
+                <a
+                  href="#news"
+                  class="footer__list__link"
+                >
+                  News
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__terms">
+            <p>© 2010 — 2020</p>
+            <p>Privacy — Terms</p>
+          </div>
+          <a
+            href="#home"
+            class="footer__scroll-up"
+            aria-label="Back to top"
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- #endregion -->
+    <script type="module" src="./src/scripts/main.js"></script>
+  </body>
+</html>

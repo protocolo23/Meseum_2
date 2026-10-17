@@ -1,0 +1,139 @@
+.exhibitions-page {
+  min-height: 100vh;
+  background: $color-paper;
+
+  &__header {
+    padding-block: 20px;
+    background: linear-gradient(135deg, $color-dark, $color-darkest);
+  }
+
+  &__header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__back {
+    color: $color-white;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  &__main {
+    padding-block: 48px 80px;
+
+    @include tablet {
+      padding-block: 72px 100px;
+    }
+  }
+
+  &__intro {
+    max-width: 760px;
+    margin-bottom: 42px;
+
+    @include tablet {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__eyebrow {
+    margin-bottom: 12px;
+    color: $color-primary-hover;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    color: $color-darkest;
+    font-size: 38px;
+    line-height: 1.08;
+
+    @include tablet {
+      font-size: 60px;
+    }
+  }
+
+  &__description {
+    max-width: 620px;
+    color: $color-muted;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+    }
+  }
+
+  &__card {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: $color-white;
+    box-shadow: 0 14px 36px rgba($color-darkest, 0.1);
+    transition: transform $transition-time, box-shadow $transition-time;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 42px rgba($color-darkest, 0.16);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    background-color: #e9e4d9;
+  }
+
+  &__card-content {
+    padding: 24px;
+
+    @include tablet {
+      padding: 30px;
+    }
+  }
+
+  &__date {
+    margin-bottom: 10px;
+    color: $color-primary-hover;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  &__name {
+    margin-bottom: 14px;
+    color: $color-darkest;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  &__details {
+    margin-bottom: 24px;
+    color: $color-muted;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  &__ticket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

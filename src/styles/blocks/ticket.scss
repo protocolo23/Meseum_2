@@ -1,0 +1,124 @@
+.ticket-page {
+  background: $color-paper;
+}
+
+.ticket-header {
+  padding: 24px 0 16px;
+  background: linear-gradient(135deg, $color-dark, $color-darkest);
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__back {
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.ticket-main {
+  padding: 56px 0 80px;
+}
+
+.ticket-shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @include tablet {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+.ticket-panel {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(18, 28, 28, 0.08);
+  padding: 32px 24px;
+
+  &__eyebrow {
+    margin: 0 0 8px;
+    color: $color-primary-hover;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  &__title,
+  &__subtitle {
+    margin: 0 0 24px;
+    color: $color-darkest;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+  }
+}
+
+.ticket-form {
+  display: grid;
+  gap: 18px;
+
+  &__group {
+    display: grid;
+    gap: 8px;
+
+    label {
+      color: $color-dark;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid #d9dfe1;
+      border-radius: 12px;
+      background: #f7f8f8;
+      color: $color-darkest;
+      font: inherit;
+    }
+  }
+
+  &__submit {
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
+.ticket-summary {
+  display: grid;
+  gap: 16px;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #edf2f3;
+    color: $color-dark;
+
+    strong {
+      color: $color-darkest;
+    }
+
+    &--total {
+      border-bottom: none;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: $color-darkest;
+    }
+  }
+
+  &__note {
+    margin-top: 18px;
+    color: $color-muted;
+    line-height: 1.6;
+  }
+}
